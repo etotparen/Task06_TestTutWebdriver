@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VacancySearch">
+    <test name="Search a certain vacancy on http://tut.by">
+        <parameter name="testUrl" value="http://tut.by"/>
+        <parameter name="testVacancy" value="специалист по тестированию"/>
+        <classes>
+            <class name="TestTutBySearchVacancy"/>
+        </classes>
+    </test>
+</suite>
