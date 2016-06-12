@@ -10,9 +10,6 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-/**
- * Created by Ban on 12.06.2016.
- */
 public class TestTutBySearchVacancy {
 
     private WebDriver driver;
@@ -38,7 +35,8 @@ public class TestTutBySearchVacancy {
                 count++;
         }
         Assert.assertTrue(count > 0);
-        System.out.println("Number of suitable vacancies: " + count);
+        System.out.println(String.format("Number of suitable vacancies: %1d", count));
+
         }
 
     @AfterTest
